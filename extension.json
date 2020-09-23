@@ -1,0 +1,12 @@
+{
+  "identifier": "org.nekotheme",
+  "name": "Neko theme for Nova",
+  "organization": "Arturo Martín",
+  "description": "A minimal dark theme for Nova.",
+  "version": "1.0",
+  "categories": ["themes"],
+  "homepage": "https://github.com/arturomartin/neko-theme-for-nova",
+  "bugs": {
+    "email": "arturo.martin@gmail.com"
+  }
+}

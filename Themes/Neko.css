@@ -1,0 +1,359 @@
+meta {
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: false;
+}
+
+:root {
+  --background: #282a36;
+  --yellow: #ffd471;
+  --orange: #ffa245;
+  --green: #abe66e;
+  --pink: #ff6ac1;
+  --blue: #00d2e9;
+  --error-red: #ff5c57;
+  --warning-yellow: #f3f99d;
+  --gutter: #3f4555;
+  --line-highlight: #20222f;
+}
+
+/*
+ * Window styles
+ */
+meta.window {
+  background-color: #282a36;
+  border-color: #282a36;
+}
+
+meta.titlebar {
+  color: #cbccc5;
+  /* background: linear-gradient(hsb(210, 10%, 26%), hsb(210, 10%, 20%)); */
+  background-color: #282a36;
+  border-color: #282a36;
+}
+
+meta.titlebar.inactive {
+  background-color: #282a36;
+}
+
+meta.button {
+  background-color: #20222f;
+  border-color: #20222f;
+  color: #cbccc5;
+}
+
+meta.button.highlighted {
+  background-color: #ffd471;
+  color: #00d2e9;
+}
+
+meta.button.selected {
+  color: #00d2e9;
+}
+
+meta.button.highlighted.selected {
+  color: #cbccc5;
+}
+
+meta.button.disabled {
+  background: #3f4555;
+  color: hsb(0, 0%, 40%);
+}
+
+meta.textfield {
+  background-color: #20222f;
+  border-color: #20222f;
+}
+
+meta.accent {
+  color: #ffd471;
+}
+
+/*
+ * Document styles
+ */
+meta.document {
+  background-color: #282a36;
+  border-color: #282a36;
+}
+
+meta.document.button {
+  background-color: #20222f;
+}
+
+meta.document.button.disabled {
+  background-color: #3f4555;
+}
+
+meta.document.button.highlighted {
+  background-color: black;
+}
+
+meta.document.textfield {
+  background-color: #20222f;
+}
+
+/* Text */
+meta.text {
+  color: #cbccc5;
+}
+
+meta.text.invisible {
+  color: #414d64;
+}
+
+meta.text.selected {
+  color: #cbccc5;
+  background-color: #2f455c;
+}
+
+/* Cursor */
+meta.cursor {
+  background-color: #20222f;
+}
+
+/* Indentation Guides */
+meta.indentguide {
+  border-color: #414d64;
+}
+
+/* Gutter */
+meta.gutter {
+  background-color: #1c2639;
+  color: #3f4555;
+}
+
+meta.gutter.selected {
+  background-color: #28344b;
+  color: #cbccc5;
+}
+
+/* Syntax styles */
+keyword {
+  color: #ffa245;
+}
+
+comment {
+  color: #a8adb7;
+}
+
+processing {
+  color: #a8adb7;
+}
+
+declaration {
+  color: #a8adb7;
+}
+
+bracket {
+  color: #cbccc5;
+}
+
+operator {
+  color: #ff6ac1;
+}
+
+invalid {
+  background-color: hsb(355, 82%, 96%);
+}
+
+link {
+  color: #ffd471;
+}
+
+/* Values */
+value.boolean {
+  color: #ffd471;
+}
+
+value.null {
+  color: #ffd471;
+}
+
+value.number {
+  color: #abe66e;
+}
+
+value.entity {
+  color: #ffd471;
+}
+
+value.symbol {
+  color: #ffd471;
+}
+
+/* Identifiers */
+identifier.type {
+  color: #00d2e9;
+}
+
+identifier.global,
+identifier.variable {
+  color: #f3f99d;
+}
+
+identifier.property,
+identifier.decorator {
+  color: #00d2e9;
+}
+
+identifier.function,
+identifier.method {
+  color: #f3f99d;
+}
+
+identifier.key {
+  color: #ffd471;
+}
+
+identifier.argument {
+  color: #ffa245;
+}
+
+/* Strings */
+string {
+  color: #abe66e;
+}
+
+string.key {
+  color: #00d2e9;
+}
+
+string-template {
+  color: #ffd471;
+}
+
+string-template.value {
+  color: #ffd471;
+}
+
+regex {
+  color: #00d2e9;
+}
+
+regex.escaped {
+  color: #abe66e;
+}
+
+cdata {
+  color: #ffd471;
+}
+
+/* Markup */
+markup.heading {
+  color: #ffd471;
+}
+
+markup.line {
+  color: #abe66e;
+}
+
+markup.bold {
+  color: #00d2e9;
+  font-weight: bold;
+}
+
+markup.italic {
+  color: #abe66e;
+  font-style: italic;
+}
+
+markup.strikethrough {
+  color: #ffa245;
+  text-decoration: line-through;
+}
+
+markup.list.item {
+  color: #00d2e9;
+}
+
+markup.code {
+  border-radius: 4px;
+  background-color: #3f4555;
+  border-color: #cbccc5;
+}
+
+/* Types */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+  font-weight: bold;
+  color: #00d2e9;
+}
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+  color: #ff6ac1;
+}
+
+/* Tags */
+tag {
+  color: #00d2e9;
+}
+
+tag.framework {
+  color: #abe66e;
+}
+
+tag.attribute.name {
+  color: #f3f99d;
+}
+
+tag.attribute.value {
+  color: #abe66e;
+}
+
+tag.attribute.value.link {
+  color: #ff6ac1;
+}
+
+/* Styles */
+style.at {
+  color: #ffa245;
+}
+
+style.selector.element {
+  color: #00d2e9;
+}
+
+style.selector.identifier.id {
+  color: #abe66e;
+}
+
+style.selector.identifier.class {
+  color: #ffa245;
+}
+
+style.selector.pseudoclass {
+  color: #ffa245;
+}
+
+style.selector.pseudoelement {
+  color: #abe66e;
+}
+
+style.attribute.name {
+  color: #00d2e9;
+}
+
+style.value.number {
+  color: #abe66e;
+}
+
+style.value.color.hex {
+  color: #ff6ac1;
+}
+
+style.value.keyword {
+  color: #ffa245;
+  font-style: italic;
+}
+
+style.value.color.named {
+  color: #ffd471;
+}

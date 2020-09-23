@@ -1,0 +1,324 @@
+meta {
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: false;
+}
+
+$background: #282a36;
+$yellow: #ffd471;
+$orange: #ffa245;
+$green: #abe66e;
+$pink: #ff6ac1;
+$blue: #00d2e9;
+$white: #cbccc5;
+$error-red: #ff5c57;
+$warning-yellow: #f3f99d;
+$gutter: #3f4555;
+$line-highlight: #20222f;
+$selected-text: #2f455c;
+$text-and-indent: #414d64;
+
+:root {
+  --background: #282a36;
+  --yellow: #ffd471;
+  --orange: #ffa245;
+  --green: #abe66e;
+  --pink: #ff6ac1;
+  --blue: #00d2e9;
+  --error-red: #ff5c57;
+  --warning-yellow: #f3f99d;
+  --gutter: #3f4555;
+  --line-highlight: #20222f;
+}
+
+/*
+ * Window styles
+ */
+meta.window {
+  background-color: $background;
+  border-color: $background;
+}
+meta.titlebar {
+  color: $white;
+  /* background: linear-gradient(hsb(210, 10%, 26%), hsb(210, 10%, 20%)); */
+  background-color: $background;
+  border-color: $background;
+}
+meta.titlebar.inactive {
+  background-color: $background;
+}
+
+meta.button {
+  background-color: $line-highlight;
+  border-color: $line-highlight;
+  color: $white;
+}
+meta.button.highlighted {
+  background-color: $yellow;
+  color: $blue;
+}
+meta.button.selected {
+  color: $blue;
+}
+meta.button.highlighted.selected {
+  color: $white;
+}
+meta.button.disabled {
+  background: $gutter;
+  color: hsb(0, 0%, 40%);
+}
+
+meta.textfield {
+  background-color: $line-highlight;
+  border-color: $line-highlight;
+}
+
+meta.accent {
+  color: $yellow;
+}
+
+/*
+ * Document styles
+ */
+meta.document {
+  background-color: $background;
+  border-color: $background;
+}
+
+meta.document.button {
+  background-color: $line-highlight;
+}
+meta.document.button.disabled {
+  background-color: $gutter;
+}
+meta.document.button.highlighted {
+  background-color: darken($background, 50%);
+}
+
+meta.document.textfield {
+  background-color: $line-highlight;
+}
+
+/* Text */
+meta.text {
+  color: $white;
+}
+meta.text.invisible {
+  color: $text-and-indent;
+}
+meta.text.selected {
+  color: $white;
+  background-color: $selected-text;
+}
+
+/* Cursor */
+meta.cursor {
+  background-color: $line-highlight;
+}
+
+/* Indentation Guides */
+meta.indentguide {
+  border-color: $text-and-indent;
+}
+
+/* Gutter */
+meta.gutter {
+  background-color: #1c2639;
+  color: $gutter;
+}
+meta.gutter.selected {
+  background-color: #28344b;
+  color: $white;
+}
+
+/* Syntax styles */
+keyword {
+  color: $orange;
+}
+comment {
+  color: #a8adb7;
+}
+processing {
+  color: #a8adb7;
+}
+declaration {
+  color: #a8adb7;
+}
+bracket {
+  color: $white;
+}
+operator {
+  color: $pink;
+}
+invalid {
+  background-color: hsb(355, 82%, 96%);
+}
+link {
+  color: $yellow;
+}
+
+/* Values */
+value.boolean {
+  color: $yellow;
+}
+value.null {
+  color: $yellow;
+}
+value.number {
+  color: $green;
+}
+value.entity {
+  color: $yellow;
+}
+value.symbol {
+  color: $yellow;
+}
+
+/* Identifiers */
+identifier.type {
+  color: $blue;
+}
+identifier.constant {
+}
+identifier.global,
+identifier.variable {
+  color: $warning-yellow;
+}
+identifier.property,
+identifier.decorator {
+  color: $blue;
+}
+
+identifier.function,
+identifier.method {
+  color: $warning-yellow;
+}
+
+identifier.key {
+  color: $yellow;
+}
+identifier.argument {
+  color: $orange;
+}
+
+/* Strings */
+string {
+  color: $green;
+}
+string.key {
+  color: $blue;
+}
+string-template {
+  color: $yellow;
+}
+string-template.value {
+  color: $yellow;
+}
+regex {
+  color: $blue;
+}
+regex.escaped {
+  color: $green;
+}
+cdata {
+  color: $yellow;
+}
+
+/* Markup */
+markup.heading {
+  color: $yellow;
+}
+markup.line {
+  color: $green;
+}
+markup.bold {
+  color: $blue;
+  font-weight: bold;
+}
+markup.italic {
+  color: $green;
+  font-style: italic;
+}
+markup.strikethrough {
+  color: $orange;
+  text-decoration: line-through;
+}
+markup.list.item {
+  color: $blue;
+}
+markup.code {
+  border-radius: 4px;
+  background-color: $gutter;
+  border-color: $white;
+}
+
+/* Types */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+  font-weight: bold;
+  color: $blue;
+}
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+  color: $pink;
+}
+
+/* Tags */
+tag {
+  color: $blue;
+}
+tag.framework {
+  color: $green;
+}
+tag.attribute.name {
+  color: $warning-yellow;
+}
+tag.attribute.value {
+  color: $green;
+}
+tag.attribute.value.link {
+  color: $pink;
+}
+
+/* Styles */
+style.at {
+  color: $orange;
+}
+style.selector.element {
+  color: $blue;
+}
+style.selector.identifier.id {
+  color: $green;
+}
+style.selector.identifier.class {
+  color: $orange;
+}
+style.selector.pseudoclass {
+  color: $orange;
+}
+style.selector.pseudoelement {
+  color: $green;
+}
+style.attribute.name {
+  color: $blue;
+}
+style.value.number {
+  color: $green;
+}
+style.value.color.hex {
+  color: $pink;
+}
+style.value.keyword {
+  color: $orange;
+  font-style: italic;
+}
+style.value.color.named {
+  color: $yellow;
+}
