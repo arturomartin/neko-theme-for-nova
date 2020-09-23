@@ -18,19 +18,6 @@ $line-highlight: #20222f;
 $selected-text: #2f455c;
 $text-and-indent: #414d64;
 
-:root {
-  --background: #282a36;
-  --yellow: #ffd471;
-  --orange: #ffa245;
-  --green: #abe66e;
-  --pink: #ff6ac1;
-  --blue: #00d2e9;
-  --error-red: #ff5c57;
-  --warning-yellow: #f3f99d;
-  --gutter: #3f4555;
-  --line-highlight: #20222f;
-}
-
 /*
  * Window styles
  */
@@ -64,8 +51,8 @@ meta.button.highlighted.selected {
   color: $white;
 }
 meta.button.disabled {
-  background: $gutter;
-  color: hsb(0, 0%, 40%);
+  background: lighten($background, 5%);
+  color: lighten($background, 20%);
 }
 
 meta.textfield {
@@ -123,12 +110,12 @@ meta.indentguide {
 
 /* Gutter */
 meta.gutter {
-  background-color: #1c2639;
+  background-color: $background;
   color: $gutter;
 }
 meta.gutter.selected {
-  background-color: #28344b;
-  color: $white;
+  background-color: lighten($background, 5%);
+  color: darken(desaturate($white, 100%), 35%);
 }
 
 /* Syntax styles */
@@ -136,13 +123,13 @@ keyword {
   color: $orange;
 }
 comment {
-  color: #a8adb7;
+  color: darken(desaturate($white, 100%), 35%);
 }
 processing {
-  color: #a8adb7;
+  color: $white;
 }
 declaration {
-  color: #a8adb7;
+  color: $white;
 }
 bracket {
   color: $white;
@@ -151,7 +138,7 @@ operator {
   color: $pink;
 }
 invalid {
-  background-color: hsb(355, 82%, 96%);
+  background-color: $error-red;
 }
 link {
   color: $yellow;
@@ -179,7 +166,9 @@ identifier.type {
   color: $blue;
 }
 identifier.constant {
+  color: $warning-yellow;
 }
+
 identifier.global,
 identifier.variable {
   color: $warning-yellow;

@@ -4,19 +4,6 @@ meta {
   -theme-accent-color: false;
 }
 
-:root {
-  --background: #282a36;
-  --yellow: #ffd471;
-  --orange: #ffa245;
-  --green: #abe66e;
-  --pink: #ff6ac1;
-  --blue: #00d2e9;
-  --error-red: #ff5c57;
-  --warning-yellow: #f3f99d;
-  --gutter: #3f4555;
-  --line-highlight: #20222f;
-}
-
 /*
  * Window styles
  */
@@ -56,8 +43,8 @@ meta.button.highlighted.selected {
 }
 
 meta.button.disabled {
-  background: #3f4555;
-  color: hsb(0, 0%, 40%);
+  background: #333545;
+  color: #535871;
 }
 
 meta.textfield {
@@ -119,13 +106,13 @@ meta.indentguide {
 
 /* Gutter */
 meta.gutter {
-  background-color: #1c2639;
+  background-color: #282a36;
   color: #3f4555;
 }
 
 meta.gutter.selected {
-  background-color: #28344b;
-  color: #cbccc5;
+  background-color: #333545;
+  color: #6f6f6f;
 }
 
 /* Syntax styles */
@@ -134,15 +121,15 @@ keyword {
 }
 
 comment {
-  color: #a8adb7;
+  color: #6f6f6f;
 }
 
 processing {
-  color: #a8adb7;
+  color: #cbccc5;
 }
 
 declaration {
-  color: #a8adb7;
+  color: #cbccc5;
 }
 
 bracket {
@@ -154,7 +141,7 @@ operator {
 }
 
 invalid {
-  background-color: hsb(355, 82%, 96%);
+  background-color: #ff5c57;
 }
 
 link {
@@ -185,6 +172,10 @@ value.symbol {
 /* Identifiers */
 identifier.type {
   color: #00d2e9;
+}
+
+identifier.constant {
+  color: #f3f99d;
 }
 
 identifier.global,

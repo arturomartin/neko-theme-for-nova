@@ -1,8 +1,6 @@
-<!-- ![Neko theme for Nova](readme-header.png "Neko theme for Nova") -->
+# Neko theme for [Nova](https://nova.app)
 
 ![Neko theme for Nova](screenshot.png "Neko theme for Nova")
-
-# Neko theme for Nova
 
 A minimal dark theme for [Nova](https://nova.app), the new editor by [Panic](https://panic.com/). I created for myself and use it for my daily work. Use it as you like!
 
