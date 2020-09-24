@@ -132,7 +132,7 @@ declaration {
   color: $white;
 }
 bracket {
-  color: $white;
+  color: darken($white, 25%);
 }
 operator {
   color: $pink;
@@ -215,7 +215,7 @@ cdata {
 
 /* Markup */
 markup.heading {
-  color: $yellow;
+  color: $pink;
 }
 markup.line {
   color: $green;
@@ -238,7 +238,12 @@ markup.list.item {
 markup.code {
   border-radius: 4px;
   background-color: $gutter;
-  border-color: $white;
+  border-color: $gutter;
+  color: $yellow;
+}
+
+markup.link {
+  color: $blue;
 }
 
 /* Types */

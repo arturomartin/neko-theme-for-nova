@@ -133,7 +133,7 @@ declaration {
 }
 
 bracket {
-  color: #cbccc5;
+  color: #8e9081;
 }
 
 operator {
@@ -232,7 +232,7 @@ cdata {
 
 /* Markup */
 markup.heading {
-  color: #ffd471;
+  color: #ff6ac1;
 }
 
 markup.line {
@@ -261,7 +261,12 @@ markup.list.item {
 markup.code {
   border-radius: 4px;
   background-color: #3f4555;
-  border-color: #cbccc5;
+  border-color: #3f4555;
+  color: #ffd471;
+}
+
+markup.link {
+  color: #00d2e9;
 }
 
 /* Types */
