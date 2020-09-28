@@ -30,8 +30,8 @@ meta.button {
 }
 
 meta.button.highlighted {
-  background-color: #ffd471;
-  color: #00d2e9;
+  background-color: #00d2e9;
+  color: #282a36;
 }
 
 meta.button.selected {
