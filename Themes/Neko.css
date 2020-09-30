@@ -74,6 +74,7 @@ meta.document.button.disabled {
 
 meta.document.button.highlighted {
   background-color: black;
+  color: #00d2e9;
 }
 
 meta.document.textfield {

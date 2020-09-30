@@ -80,6 +80,7 @@ meta.document.button.disabled {
 }
 meta.document.button.highlighted {
   background-color: darken($background, 50%);
+  color: $blue;
 }
 
 meta.document.textfield {
