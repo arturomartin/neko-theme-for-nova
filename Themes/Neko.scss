@@ -293,7 +293,7 @@ style.selector.identifier.id {
   color: $green;
 }
 style.selector.identifier.class {
-  color: $orange;
+  color: lighten($blue, 35%);
 }
 style.selector.pseudoclass {
   color: $orange;
