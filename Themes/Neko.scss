@@ -317,3 +317,29 @@ style.value.keyword {
 style.value.color.named {
   color: $yellow;
 }
+
+/* Vue */
+vue.html.tag.open,
+vue.html.tag.close {
+  color: $blue;
+}
+
+vue.html.tag.name {
+  color: $blue;
+}
+
+vue.html.tag.attribute.shorthand-key {
+  color: $blue;
+}
+
+vue.html.tag.attribute.name {
+  color: $yellow;
+}
+
+vue.html.embedded.interpolation.bracket {
+  color: $pink;
+}
+
+vue.html.tag.attribute.argument {
+  color: $green;
+}

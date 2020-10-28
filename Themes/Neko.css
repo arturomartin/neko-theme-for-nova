@@ -354,3 +354,29 @@ style.value.keyword {
 style.value.color.named {
   color: #ffd471;
 }
+
+/* Vue */
+vue.html.tag.open,
+vue.html.tag.close {
+  color: #00d2e9;
+}
+
+vue.html.tag.name {
+  color: #00d2e9;
+}
+
+vue.html.tag.attribute.shorthand-key {
+  color: #00d2e9;
+}
+
+vue.html.tag.attribute.name {
+  color: #ffd471;
+}
+
+vue.html.embedded.interpolation.bracket {
+  color: #ff6ac1;
+}
+
+vue.html.tag.attribute.argument {
+  color: #abe66e;
+}
